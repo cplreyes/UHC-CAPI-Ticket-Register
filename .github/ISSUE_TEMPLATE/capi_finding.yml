@@ -1,0 +1,111 @@
+name: CAPI finding
+description: Report a problem with the UHC Survey Y2 tablet apps (Field Hub, F1, F3, F4) or the HCW online survey
+title: "[App] Q__: "
+labels: ["uat-feedback", "from-uat-round-8-2026-09"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Describe what you saw in plain words. One form per problem.
+
+        **This page is public.** Do not include respondent or patient names, facility names, addresses, phone numbers, GPS, photos of people, full questionnaire numbers, usernames or passwords. Crop or cover them in screenshots.
+
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app?
+      options:
+        - Field Hub (sign-in, menu, assignments, reports)
+        - F1 Facility Head Survey
+        - F3 Patient Survey
+        - F4 Household Survey
+        - Sync / connecting to the server
+        - F2 Healthcare Worker online survey
+        - Something else
+    validations:
+      required: true
+
+  - type: input
+    id: build
+    attributes:
+      label: Build
+      description: The first screen of a new case shows it.
+      placeholder: e.g. F3 v7.3.0
+    validations:
+      required: false
+
+  - type: input
+    id: where
+    attributes:
+      label: Where did it happen?
+      placeholder: e.g. Q96, or "Hub sign-in screen"
+    validations:
+      required: true
+
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      placeholder: Describe it in plain language. If there was an error message, type it exactly. Say what you tapped just before it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened?
+      placeholder: e.g. "Q96 = No should go to Q98"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: How bad is it?
+      options:
+        - Stops the interview, or loses or will not save data
+        - Wrong question, wrong skip, or wrong data saved
+        - Looks wrong, but the answers are saved correctly
+        - Typo or wording
+        - Question or suggestion
+    validations:
+      required: true
+
+  - type: dropdown
+    id: venue
+    attributes:
+      label: Where are you?
+      options:
+        - Pampanga
+        - Calamba
+        - Cebu
+        - Cagayan de Oro
+        - HQ / office
+        - Other
+    validations:
+      required: false
+
+  - type: input
+    id: reporter
+    attributes:
+      label: Your initials (optional)
+      placeholder: e.g. MRD
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshot or screen recording (optional, very helpful)
+      description: Crop or cover any personal data first.
+      placeholder: Drag and drop an image or a short video here.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Personal data check
+      options:
+        - label: My report and screenshots show no respondent or patient name, no facility name, no address, phone number or GPS, no photo of a person, no full questionnaire number, and no username or password.
+          required: true
