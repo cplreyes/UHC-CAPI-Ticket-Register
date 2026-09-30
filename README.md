@@ -10,6 +10,8 @@ report becomes a ticket, and each ticket is fixed, tested and shipped as it come
 1. You need a free GitHub account. Sign in first.
 2. Go to **[Issues → New issue](../../issues/new/choose)** and pick **CAPI finding**.
 3. Fill in the form. One form per problem.
+4. Say who you are and type your FS or SE number (e.g. *FS 07*, *SE 045*). SRAs, the Data
+   Manager and HQ type *SRA*, *DM* or *HQ*.
 
 Can't use GitHub? Tell your SRA, or post in the team's Slack channel. Those reports are filed
 here for you.
@@ -29,7 +31,8 @@ Anyone on the internet can read this page. Before you post a screenshot, crop or
 - **facility names**;
 - addresses, phone numbers and GPS coordinates;
 - photos of people;
-- usernames and passwords (**never** post a password);
+- passwords (**never** post one) and anyone else's username. Your own FS or SE number goes only
+  in the form's box for it;
 - the full questionnaire number. If we need it, we will ask for it privately.
 
 Describe the problem by question number instead. If you posted something by mistake, say so in
@@ -38,6 +41,11 @@ Slack and it will be taken down.
 ## What happens next
 
 - Reports are checked every hour.
+- **Field Supervisors' reports** (and those from the SRAs, the Data Manager and HQ) go straight
+  to the developers.
+- **Enumerators' reports are checked by the survey team first.** Some ask for something the
+  survey cannot do. The team answers on the ticket, and a report is fixed only after the team
+  approves it.
 - A fix goes to the server, and the Slack channel gets a patch note with the new version.
 - The ticket is closed with the build that fixes it. If the problem is still there after your
   tablet is updated, comment on the ticket and it is reopened.

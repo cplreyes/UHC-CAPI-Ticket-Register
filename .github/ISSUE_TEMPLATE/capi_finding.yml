@@ -8,7 +8,30 @@ body:
       value: |
         Thanks for reporting! Describe what you saw in plain words. One form per problem.
 
-        **This page is public.** Do not include respondent or patient names, facility names, addresses, phone numbers, GPS, photos of people, full questionnaire numbers, usernames or passwords. Crop or cover them in screenshots.
+        **This page is public.** Do not include respondent or patient names, facility names, addresses, phone numbers, GPS, photos of people, full questionnaire numbers, passwords, or anyone else's username. Crop or cover them in screenshots. Your own FS or SE number goes in its box below.
+
+        **Field Supervisors:** your report goes straight to the developers. **Enumerators:** the survey team checks your report first, then it is fixed if it can be.
+
+  - type: dropdown
+    id: role
+    attributes:
+      label: Who are you?
+      options:
+        - Field Supervisor (FS)
+        - Survey Enumerator (SE)
+        - SRA, Data Manager or HQ
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: reporter_no
+    attributes:
+      label: Your FS or SE number
+      description: "FS: e.g. FS 07. SE: e.g. SE 045. SRA, Data Manager or HQ: type SRA, DM or HQ."
+      placeholder: e.g. FS 07 or SE 045
+    validations:
+      required: true
 
   - type: dropdown
     id: app
@@ -107,5 +130,5 @@ body:
     attributes:
       label: Personal data check
       options:
-        - label: My report and screenshots show no respondent or patient name, no facility name, no address, phone number or GPS, no photo of a person, no full questionnaire number, and no username or password.
+        - label: My report and screenshots show no respondent or patient name, no facility name, no address, phone number or GPS, no photo of a person, no full questionnaire number, no password, and no username other than my own FS or SE number.
           required: true
