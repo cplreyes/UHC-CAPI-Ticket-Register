@@ -3,7 +3,9 @@
 This is where anyone testing the **UHC Survey Year 2** tablet apps can report a problem. Each
 report becomes a ticket, and each ticket is fixed, tested and shipped as it comes in.
 
-**Open now, during SE training, until Monday 5 October 2026.**
+> **This register is CLOSED (5 October 2026).** The survey has started and the field build is final: F1 v5.7.1 · F3 v7.8.1 · F4 v4.8.1 · Field Hub v1.15.1. All 37 tickets are closed and kept here for the record. New tickets can no longer be filed. **During the survey, report problems to your SRA or Field Supervisor.**
+
+*It was open during SE training, 29 September to 5 October 2026.*
 
 ## Report a problem
 
