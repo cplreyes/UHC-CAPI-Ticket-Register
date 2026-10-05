@@ -55,14 +55,14 @@ Slack and it will be taken down.
 **Updating a tablet:** CSEntry → ⋮ → *Add Application* → *CSWeb server* → *CONNECT* → tap
 **UPDATE** next to the app. **Never remove an app**: removing it deletes the cases on the tablet.
 
-## Current builds (5 Oct 2026)
+## Current builds (6 Oct 2026)
 
 | App | Build |
 |---|---|
 | Facility Head Survey (F1) | v5.8.0 |
 | Patient Survey (F3) | v7.10.0 |
 | Household Survey (F4) | v4.10.0 |
-| Field Hub | v1.15.4 |
+| Field Hub | v1.15.5 |
 | HCW Survey (F2, in the browser) | v3.1.0 · spec 2026-10-05-m6 |
 
 A tablet shows an older build until it is updated (see above). The HCW survey updates with one
