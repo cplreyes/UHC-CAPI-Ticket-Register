@@ -1,11 +1,12 @@
 # UHC Survey Y2: CAPI ticket register
 
-This is where anyone testing the **UHC Survey Year 2** tablet apps can report a problem. Each
-report becomes a ticket, and each ticket is fixed, tested and shipped as it comes in.
+This is where anyone working on the **UHC Survey Year 2** can report a problem with the tablet
+apps or the HCW survey (F2). Each report becomes a ticket, and the survey team reviews every
+ticket before anything is changed.
 
-> **REOPENED for the bench test: open until the end of Monday 5 October 2026 (Manila time).** Report the findings from testing the final build: F1 v5.7.1 · F3 v7.8.1 · F4 v4.8.1 · Field Hub v1.15.3. Put the build you tested in the form's Build box (the first screen of a new case shows it; the Field Hub's name ends with it). After today, report problems to your SRA or Field Supervisor.
+> **Open for the whole survey.** Report any problem you meet in the field. Put the build you are using in the form's Build box (the first screen of a new case shows it; the Field Hub's name ends with it).
 
-*It was open during SE training, 29 September to 5 October 2026, closed early on 5 October, and reopened the same day for the bench test. Tickets #1 to #37 are closed and kept here for the record.*
+*It was open during SE training (29 September to 5 October 2026) and for the bench test on 5 October. Tickets #1 to #41 from those rounds are closed and kept here for the record.*
 
 ## Report a problem
 
@@ -42,30 +43,30 @@ Slack and it will be taken down.
 
 ## What happens next
 
-- Reports are checked every hour.
-- **Field Supervisors' reports** (and those from the SRAs, the Data Manager and HQ) go straight
-  to the developers.
-- **Enumerators' reports are checked by the survey team first.** Some ask for something the
-  survey cannot do. The team answers on the ticket, and a report is fixed only after the team
-  approves it.
-- A fix goes to the server, and the Slack channel gets a patch note with the new version.
+- Reports are checked three times a day, at about 6:00, 12:00 and 18:00 (Manila time).
+- Every ticket is labelled with its app and how serious it is, and answered on the ticket with
+  what it is. Some ask for something the survey cannot do.
+- **The survey team reviews every ticket and decides what happens next.** Nothing is changed
+  until the team approves it; serious problems are raised with the team at once.
+- An approved fix goes to the server, and the Slack channel gets a patch note with the new version.
 - The ticket is closed with the build that fixes it. If the problem is still there after your
   tablet is updated, comment on the ticket and it is reopened.
 
 **Updating a tablet:** CSEntry → ⋮ → *Add Application* → *CSWeb server* → *CONNECT* → tap
 **UPDATE** next to the app. **Never remove an app**: removing it deletes the cases on the tablet.
 
-## Builds under test (29 Sep 2026)
+## Current builds (5 Oct 2026)
 
 | App | Build |
 |---|---|
-| Facility Head Survey (F1) | v5.3.0 |
-| Patient Survey (F3) | v7.3.0 |
-| Household Survey (F4) | v4.3.0 |
-| Field Hub | v1.14.0 |
+| Facility Head Survey (F1) | v5.8.0 |
+| Patient Survey (F3) | v7.10.0 |
+| Household Survey (F4) | v4.10.0 |
+| Field Hub | v1.15.4 |
+| HCW Survey (F2, in the browser) | v3.1.0 · spec 2026-10-05-m6 |
 
-Tablets staged from the 25 Sep package show F1 v5.2.2, F3 v7.2.2, F4 v4.2.1 and Hub v1.13.5 until
-they are updated.
+A tablet shows an older build until it is updated (see above). The HCW survey updates with one
+page reload.
 
 ---
 
